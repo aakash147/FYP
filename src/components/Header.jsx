@@ -15,6 +15,8 @@ import { Paper, Box, Grid, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 import { useCart } from "react-use-cart";
 
+import { BsCart } from "react-icons/bs";
+
 const useStyles = makeStyles({
   list: {
     width: 250,
@@ -264,13 +266,13 @@ export default function Header() {
 
                 <Link to="/shopping-cart" style={{ textDecoration: "none" }}>
                   <LocalMallOutlinedIcon
-                    style={{ color: "#D01345", cursor: "pointer" }}
+                    style={{ color: "#D01345", fontSize : '2.5rem' , cursor: "pointer" }}
                   />
                 </Link>
                 <Typography
                   sx={{
                     position: "absolute",
-                    right: "-5px",
+                    right: "-15px",
                     top: { xs: "-10px", sm: "-4px" },
                     fontSize: "12px",
                     color: "#ffffff",
