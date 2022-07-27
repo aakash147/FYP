@@ -22,12 +22,19 @@ class Item extends Component {
           {this.props.item.desc}
           <div className="caption">
             <button
-              className={`btn ${
-                this.props.selectedItem === true ? "btn-danger" : "btn-primary"
-              }`}
+              className="softTry"
               onClick={this.getSelectedItem.bind(this)}
             >
               Try it
+            </button>
+          </div>
+          <div className="caption">
+            <button
+              className="softCart"
+
+              // onClick={this.getSelectedItem.bind(this)}
+            >
+              Add to Cart
             </button>
           </div>
         </div>
