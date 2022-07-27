@@ -25,9 +25,9 @@ export default class Home extends Component {
             <BtnGroup />
             <Store getSelectedItemApp={this.getSelectedItemApp.bind(this)} />
           </div>
-          {/* <div className="col-lg-4 col-sm-4">
+          <div className="col-lg-4 col-sm-4">
             <Contain selectedItem={this.state.selectedItem} />
-          </div> */}
+          </div>
         </div>
       </div>
     );

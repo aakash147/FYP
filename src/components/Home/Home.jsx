@@ -8,6 +8,7 @@ import homeBG from "../../images/homeBG.png";
 import poloHOME from "../../images/poloHOME.jpg";
 import active from "../../images/active.jpg";
 import teeHome from "../../images/teeHome.jpg";
+import { Link } from "react-router-dom";
 // import poloPic from "../../images/poloPic.png";
 
 function Home() {
@@ -15,14 +16,17 @@ function Home() {
     {
       picture: `${poloHOME}`,
       text: "POLOS",
+      link: "/polo-shirts",
     },
     {
       picture: `${active}`,
       text: "ACTIVE WARE",
+      link: "/soft-room",
     },
     {
       picture: `${teeHome}`,
       text: "TEES",
+      link: "/t-shirts",
     },
   ];
   const pagination = {
@@ -125,24 +129,26 @@ function Home() {
         </Typography>
 
         <Grid container spacing={1}>
-          {homeCard.map(({ picture, text }, i) => {
+          {homeCard.map(({ picture, text, link }, i) => {
             return (
               <Grid item xs={12} sm={6} md={4}>
-                <Box height="100%" position="relative">
-                  <img src={picture} alt="products" width="100%" />
-                  <Typography
-                    color="#fff"
-                    fontSize={{ xs: "25px", md: "30px" }}
-                    fontWeight="700"
-                    sx={{
-                      position: "absolute",
-                      bottom: "22%",
-                      left: i === 1 ? "27%" : "38%",
-                    }}
-                  >
-                    {text}
-                  </Typography>
-                </Box>
+                <Link to={link} >
+                  <Box height="100%" position="relative">
+                    <img src={picture} alt="products" width="100%" />
+                    <Typography
+                      color="#fff"
+                      fontSize={{ xs: "25px", md: "30px" }}
+                      fontWeight="700"
+                      sx={{
+                        position: "absolute",
+                        bottom: "22%",
+                        left: i === 1 ? "27%" : "38%",
+                      }}
+                    >
+                      {text}
+                    </Typography>
+                  </Box>
+                </Link>
               </Grid>
             );
           })}
