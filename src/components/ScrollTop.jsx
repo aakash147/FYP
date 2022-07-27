@@ -23,7 +23,7 @@ function ScrollTop() {
 
   return (
     <KeyboardArrowUpIcon
-      fontSize="large"
+      
       onClick={goToTop}
       sx={{
         position: "fixed",
@@ -34,7 +34,8 @@ function ScrollTop() {
         borderRadius: "50px",
         color: "#fff",
         cursor: "pointer",
-        opacity: 0.4,
+        opacity: 0.6,
+        fontSize : '26px',
         "&:hover": {
           opacity: 0.9,
         },

@@ -59,7 +59,9 @@ function CardStructure({ pic, title, price, product }) {
         disableRipple
         onClick={() => {
           addItem(product);
-          toast.success("Added in Cart, Successfully!");
+          toast.success("Added in Cart, Successfully!", {
+            className: "toast-message",
+          });
         }}
         sx={{
           color: "#ffffff",
