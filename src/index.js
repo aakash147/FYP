@@ -14,7 +14,7 @@ import store from "./redux/store";
 ReactDOM.render(
   <>
     <ToastContainer
-      style={{ zIndex: 100000000000 }}
+      style={{ zIndex: 100000000000, fontSize: "17px" }}
       position="bottom-left"
       autoClose={2000}
       hideProgressBar={false}

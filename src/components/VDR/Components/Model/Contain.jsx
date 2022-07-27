@@ -4,6 +4,8 @@ import Model from "./Contain/Model";
 import Bikini from "./Contain/Bikini";
 import Feet from "./Contain/Feet";
 
+import { Link } from "react-router-dom";
+
 const containClass = {
   width: "460px",
   height: "590px",
@@ -49,6 +51,19 @@ export default class Contain extends Component {
         <Bikini type="bottom" selectedItem={this.state.botclothes} />
         <Feet type="left" selectedItem={this.state.shoes} />
         <Feet type="right" selectedItem={this.state.shoes} />
+
+        <div
+          style={{
+            textAlign: "center",
+            position: "absolute",
+            bottom: "-5%",
+            left: "35%",
+          }}
+        >
+          <Link to="/after-try-shopping" style={{ textDecoration: "none" }}>
+            <button className="softCart">Purchase</button>
+          </Link>
+        </div>
       </div>
     );
   }

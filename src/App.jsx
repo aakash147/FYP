@@ -13,6 +13,7 @@ import PrivateRoute from "./components/routes/PrivateRoutes/AdminPrivateRoute";
 import PublicRoute from "./components/routes/PublicRoutes/PublicRoute";
 import Order from "./components/Order";
 import VDR from "./components/VDR/VDR";
+import AfterTry from "./components/AfterTryShop/AfterTryShopping";
 
 function App() {
   return (
@@ -49,6 +50,14 @@ function App() {
             element={
               <PublicRoute>
                 <VDR />
+              </PublicRoute>
+            }
+          />
+          <Route
+            path="/after-try-shopping"
+            element={
+              <PublicRoute>
+                <AfterTry />
               </PublicRoute>
             }
           />

@@ -182,9 +182,7 @@ function Cart() {
                         }}
                         onClick={() => {
                           removeItem(item.id);
-                          toast.error("Product removed!!!", {
-                            className: "toast-message",
-                          });
+                          toast.error("Product removed!!!");
                         }}
                       >
                         X

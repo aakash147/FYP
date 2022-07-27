@@ -180,16 +180,7 @@ export function VerifyTokenForPass(body) {
           "You Have Been Verified for Password Update. Redirecting..."
         ) {
           toast.success(
-            "You Have Been Verified for Password Update. Redirecting...",
-            {
-              position: "top-right",
-              autoClose: 5000,
-              hideProgressBar: false,
-              closeOnClick: true,
-              pauseOnHover: true,
-              draggable: true,
-              progress: undefined,
-            }
+            "You Have Been Verified for Password Update. Redirecting..."
           );
           dispatch({
             type: ISTOKEN_OKTOEDIT,

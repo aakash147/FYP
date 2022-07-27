@@ -5,7 +5,7 @@
 }
 
 .softCart {
-  width: 100%;
+  width: 160px;
   height: 40px;
   background-color: #d01345;
   color: #fff;
@@ -14,8 +14,8 @@
   border-radius: 5px;
 }
 .softTry {
-  width: 100%;
-  height: 40px;
+  width: 100px;
+  height: 30px;
   background-color: transparent;
   color: #d01345;
   font-size: 16px;
@@ -109,8 +109,4 @@ hr.style13 {
   box-shadow: 0 10px 10px -10px #8c8b8b inset;
   margin-top: 5px;
   margin-bottom: 5px;
-}
-
-.toast-message{
-    font-size: 16px;
 }

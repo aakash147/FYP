@@ -19,7 +19,25 @@ import tee8 from "../../images/tees/tee8.png";
 import tee9 from "../../images/tees/tee9.png";
 import tee10 from "../../images/tees/tee10.png";
 
+import top1 from "../../images/afterTry/top1.jpg";
+import top2 from "../../images/afterTry/top2.jpg";
+import top3 from "../../images/afterTry/top3.jpg";
+import top4 from "../../images/afterTry/top4.jpg";
+import top5 from "../../images/afterTry/top5.jpg";
+import top6 from "../../images/afterTry/top6.jpg";
+import bottom1 from "../../images/afterTry/bottom1.jpg";
+import bottom2 from "../../images/afterTry/bottom2.jpg";
+import bottom3 from "../../images/afterTry/bottom3.jpg";
+import bottom4 from "../../images/afterTry/bottom4.jpg";
+import bottom5 from "../../images/afterTry/bottom5.jpg";
+import shoe1 from "../../images/afterTry/shoe1.jpg";
+import shoe2 from "../../images/afterTry/shoe2.jpg";
+import shoe3 from "../../images/afterTry/shoe3.jpg";
+import shoe4 from "../../images/afterTry/shoe4.jpg";
+import shoe5 from "../../images/afterTry/shoe5.jpg";
+
 const data = {
+  //polo shirts data
   poloProducts: [
     {
       id: 1,
@@ -83,6 +101,7 @@ const data = {
     },
   ],
 
+  // tee shirts data
   teesProducts: [
     {
       id: 11,
@@ -143,6 +162,106 @@ const data = {
       img: `${tee10}`,
       title: "PRINTED NAVY GRAPHIC T-SHIRT",
       price: 10,
+    },
+  ],
+
+  //after try product data
+  afterTry: [
+    {
+      id: 21,
+      img: `${top1}`,
+      title: "Pink Printed shirt",
+      price: 45,
+    },
+    {
+      id: 22,
+      img: `${top2}`,
+      title: "Blue Printed shirt",
+      price: 55,
+    },
+    {
+      id: 23,
+      img: `${top3}`,
+      title: "White Printed shirt",
+      price: 25,
+    },
+    {
+      id: 24,
+      img: `${top4}`,
+      title: "Purple frok shirt",
+      price: 45,
+    },
+    {
+      id: 25,
+      img: `${top5}`,
+      title: "Blue jean shirt",
+      price: 35,
+    },
+    {
+      id: 26,
+      img: `${top6}`,
+      title: "Pink plain shirt",
+      price: 26,
+    },
+    {
+      id: 27,
+      img: `${bottom1}`,
+      title: "Black short trouser",
+      price: 15,
+    },
+    {
+      id: 28,
+      img: `${bottom2}`,
+      title: "Black frok trouser",
+      price: 18,
+    },
+    {
+      id: 29,
+      img: `${bottom3}`,
+      title: "Greenish printed trouser",
+      price: 20,
+    },
+    {
+      id: 30,
+      img: `${bottom4}`,
+      title: "Red n white trouser",
+      price: 22,
+    },
+    {
+      id: 31,
+      img: `${bottom5}`,
+      title: "Pink frok trouser",
+      price: 24,
+    },
+    {
+      id: 32,
+      img: `${shoe1}`,
+      title: "Red american shoes",
+      price: 52,
+    },
+    {
+      id: 33,
+      img: `${shoe2}`,
+      title: "Camel american shoes",
+      price: 56,
+    },
+    {
+      id: 34,
+      img: `${shoe3}`,
+      title: "Stylish strips shoes",
+      price: 42,
+    },
+    {
+      id: 35,
+      img: `${shoe4}`,
+      title: "Golden high-heel shoes",
+      price: 64,
+    },
+    {
+      id: 36,
+      img: `${shoe5}`,
+      title: "Blue plain shoes",
+      price: 56,
     },
   ],
 };
