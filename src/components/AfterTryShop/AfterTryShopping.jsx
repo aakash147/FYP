@@ -28,7 +28,7 @@ function AfterTry() {
         <Grid container spacing={3}>
           {data.afterTry.map((item, i) => {
             return (
-              <Grid item xs={12} sm={4} md={3}>
+              <Grid item xs={12} sm={6} md={4}>
                 <CardStructure
                   pic={item.img}
                   title={item.title}
